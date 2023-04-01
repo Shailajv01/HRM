@@ -1,0 +1,16 @@
+<suite name="ORANGEHRM">
+	<parameter name="browser" value="Chrome" />
+	<parameter name="siteURL"
+		value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login" />
+
+
+	<test name="login">
+
+		<classes>
+			 <class name="com.test.LoginTest" />
+			  <class name="com.test.ApplicationStageTest" />
+			
+		</classes>
+`
+	</test>
+</suite>

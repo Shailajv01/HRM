@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ORANGEHRM]">
+  <parameter name="siteURL" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+  <parameter name="browser" value="Chrome"/>
+  <test thread-count="5" name="login(failed)">
+    <classes>
+      <class name="com.test.LoginTest">
+        <methods>
+          <include name="initClass"/>
+          <include name="quiteDriver"/>
+          <include name="VerifyEditBtn"/>
+          <include name="VerifyAddButton"/>
+          <include name="initTestData"/>
+        </methods>
+      </class> <!-- com.test.LoginTest -->
+      <class name="com.test.ApplicationStageTest">
+        <methods>
+          <include name="initClass"/>
+          <include name="quiteDriver"/>
+          <include name="VerifyEditBtn"/>
+          <include name="initTestData"/>
+        </methods>
+      </class> <!-- com.test.ApplicationStageTest -->
+    </classes>
+  </test> <!-- login(failed) -->
+</suite> <!-- Failed suite [ORANGEHRM] -->
